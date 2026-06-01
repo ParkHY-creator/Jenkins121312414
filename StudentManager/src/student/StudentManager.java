@@ -6,7 +6,7 @@ import java.util.Set;
 public class StudentManager {
     private Set<String> students = new HashSet<>();
 
-    //학생 추가
+    //학생 추가 랄랄라
     public void addStudent(String name) {
         if (students.contains(name)) {
             throw new IllegalArgumentException("이미 존재하는 학생입니다: " + name);
@@ -21,7 +21,7 @@ public class StudentManager {
         }
         students.remove(name);
     }
-    //학생 조회(boolean타입 반환)
+    //학생 조회(boolean타입 반환) 
     public boolean hasStudent(String name) {
         return students.contains(name);
     }

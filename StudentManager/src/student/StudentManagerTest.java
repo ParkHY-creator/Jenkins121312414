@@ -18,7 +18,7 @@ class StudentManagerTest {
 	}
 
 	@Test
-	@Order(1)
+	@Order(1) //첫 번째로 실행되는 함수
 	void testAddStudent() {
 		manager.addStudent("이동규");
 		assertTrue(manager.hasStudent("이동규"));
