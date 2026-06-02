@@ -14,11 +14,11 @@ pipeline {
                 checkout scm
             }
         }
-
+//testetsetaetat
         stage('Prepare') {
             steps {
                 sh '''
-                    mkdir -p ${CLASS_DIR}
+                    mkdir -p ${CLASS_DIR} 
                     mkdir -p ${REPORT_DIR}
                     mkdir -p lib
                     curl -L -o ${JUNIT_JAR_PATH} ${JUNIT_JAR_URL}
@@ -35,7 +35,7 @@ pipeline {
             }
         }
 
-        stage('Test') {
+        stage('Test') { // test commit
             steps {
                 sh '''
                     java -jar ${JUNIT_JAR_PATH} \
