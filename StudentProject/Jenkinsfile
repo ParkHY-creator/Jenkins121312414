@@ -7,7 +7,7 @@ pipeline {
         CLASS_DIR = 'classes'
         REPORT_DIR = 'test-reports'
     }
-//ttttttttt
+
     stages {
         stage('Checkout') {
             steps {
